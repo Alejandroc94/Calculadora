@@ -7,36 +7,41 @@
     <link rel="stylesheet" href="estilos.css">
     <script src="utilities.js"></script>
 </head>
-<body>
-    <table class="calculadora">
-        <tr>
-            <td colspan="4"><span id="resultado"></span></td>
-        </tr>
-        <tr>
-            <td><button id="siete">7</button></td>
-            <td><button id="ocho">8</button></td>
-            <td><button id="nueve">9</button></td>
-            <td><button id="division">/</button></td>
-        </tr>
-        <tr>
-            <td><button id="cuatro">4</button></td>
-            <td><button id="cinco">5</button></td>
-            <td><button id="seis">6</button></td>
-            <td><button id="multiplicacion">x</button></td>
-        </tr>
-        <tr>
-            <td><button id="uno">1</button></td>
-            <td><button id="dos">2</button></td>
-            <td><button id="tres">3</button></td>
-            <td><button id="resta">-</button></td>
-        </tr>
-        <tr>
-            <td><button id="igual">=</button></td>
-            <td><button id="cero">0</button></td>
-            <td><button id="limpiar">C</button></td>
-            <td><button id="suma">+</button></td>
-        </tr> 
+<body style="background-color:rgb(218, 224, 228); font-family: sans-serif;">
+    <div class="o-number">
+        <div class="o-number-1">
+            <div class="o-title">           
+                <h1 id="titulo1">UAO</h1>
+                <h1 id="titulo2">CALCULATOR</h1>
+            </div>
+            <div class="o-insert-nums">
+                <h4>Numero 1</h4>
+                <input onchange="handleInput('input1')" id="input1" type="text">
+                <h4>Numero 2</h4>
+                <input onchange="handleInput('input2')" id="input2" type="text">
+            </div>
+            <div class="o-type-operation">
+                <h4>Operación</h4>
+                <!-- <div style="background-color: blue; height: 30px; width: 150px;"> 
+                    <h4>suma</h4> -->
+                    <select onchange="handleSelect()" name="Combo" id="operation"> 
+                        <option value="sum">Suma</option>
+                        <option value="res">Resta</option>
+                        <option value="mul">Multiplicación</option>
+                        <option value="div">División</option>
+                    </select>
+            </div>
+        </div>
+        <div class="o-equal">
+            <button id="igual">=</button>
+        </div>
+        
+        <div class="o-result">
+            <h4 >Resultado</h4>
+            <h3 id="result"></h3>
+        </div>
+        
 
-    </table>
+    </div>
 </body>
 </html>

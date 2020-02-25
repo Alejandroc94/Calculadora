@@ -1,36 +1,103 @@
-.calculadora{
-    display: block;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: rgb(180, 180, 180);
-    width: 300px;
-    height: 500px;
-    border-radius: 20px;
-}
 
-.calculadora td button{
-    display: block;
-    width: 70px;
-    height: 70px;
+#igual{
+    background-color: red;
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    /* display: flex;
+    justify-content: center;
+    align-content: flex-start; */
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0px;
     font-size: 25px;
+    border: none;
 }
 
-#resultado{
-    display: block;
-    height: 100px;
-    width: 300px;
-    font-size: 40px;
+#igual:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+
+.o-title{
+    font-family: sans-serif;
+}
+
+#titulo1{
+    color: black;
+    margin-bottom: 0px;
+}
+
+#titulo2{
+    margin-top: 0px;
     margin-bottom: 50px;
-    text-align: center;
-    line-height: 100px;
-    background-color: rgb(220, 220, 220);
-    border-radius: 20px;
-    /*overflow-y: scroll;*/
 }
 
-#limpiar {
-    font-size: 30px;
+.o-insert-nums{
+    font-family: sans-serif;
 }
-#igual {
-    font-size: 30px;
+
+.o-number{
+    display: flex;
+    margin: 50px 100px;
+}
+
+#input1, #input2{
+    border: none; 
+    border-bottom: 1.5px solid black;
+    background-color:rgb(218, 224, 228);
+    font-size: 50px;
+}
+
+.o-equal{
+    display: flex;
+    align-content: center;
+    margin: 250px 50px;
+}
+
+.o-result{
+    background-color:rgb(237, 241, 243);
+    box-shadow:2px 2px 4px rgb(107, 160, 209);
+    width: 300px;
+    height: 180px;
+    /* display: flex; */
+    text-align: center;
+    margin: 200px 30px;
+    font-size: 20px;
+    border-radius: 15px;
+    
+ 
+}
+
+.o-result-1{
+    display: flex;
+    align-items: center;
+    
+}
+
+#operation{
+    border-radius: 15px;
+    background-color: rgb(77, 77, 85);
+    color: white;
+    height: 50px;
+    width: 200px;
+    display: flex;
+    font-size: 20px;
+}
+
+.o-type-operation{
+    margin-top: 100px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .o-number {
+        flex-direction: column;
+    } 
+    .o-equal, .o-result{
+        margin: 20px;
+        
+    }
 }
